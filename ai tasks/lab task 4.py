@@ -28,4 +28,14 @@ for character in text:
         cleaned_text += character
 print("Text without punctuation:", cleaned_text)
 
+
+
+sentence = input("Enter a sentence: ")
+words = sentence.split()
+for i in range(len(words)):
+    for i in range(len(words)):
+          for j in range(0, len(words)-i-1):
+                if words[j]>words[j+1]:
+                     words[j],words[j+1] = words[j+1],words[j]
+print("Words in alphabetical order:", ' '.join(words))
         
