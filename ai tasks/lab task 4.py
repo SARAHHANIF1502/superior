@@ -20,22 +20,33 @@ card_nber=input("Enter a 16-digit card number: ")
 Card1=LUHN(card_nber)
 Card1.validation()
 
+punc='''!@$%^&*()_+{}:"<>?|\;-~`<>/'''
+string=input("enter anything here:")
+empty_str=""
+for i in string:
+    if i not in punc:
+        empty_str+=i
+print(empty_str)
 
-text=input("Enter a sentence:")
-cleaned_text=""
-for character in text:
-    if character.isalnum() or character.isspace():
-        cleaned_text += character
-print("Text without punctuation:", cleaned_text)
 
+a="Harry Potter and the Gobllet of Fire"
+w=a.split()
+print(w)
+for i in range(len(w)):
+    w[i]=w[i].lower()
+print(w) 
+w.sort()
+for i in w:
+    print(i) 
+    or we can also take it from user
+a=input("enter anything:")
+w=a.split()
+print(w)
+for i in range(len(w)):
+    w[i]=w[i].lower()
+print(w) 
+w.sort()
+for i in w:
+    print(i) 
 
-
-sentence = input("Enter a sentence: ")
-words = sentence.split()
-for i in range(len(words)):
-    for i in range(len(words)):
-          for j in range(0, len(words)-i-1):
-                if words[j]>words[j+1]:
-                     words[j],words[j+1] = words[j+1],words[j]
-print("Words in alphabetical order:", ' '.join(words))
         
