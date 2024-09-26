@@ -1,4 +1,4 @@
-def fizz_buzz_with_sum(n):
+def fizz(n):
     prev_sum=0
     for i in range(1, n+1):
         curr_val=prev_sum+i  
@@ -11,4 +11,4 @@ def fizz_buzz_with_sum(n):
             print(f"{curr_val}: Buzz")
         else:
             print(curr_val)
-fizz_buzz_with_sum(30)
+fizz(30)
