@@ -19,6 +19,8 @@ class LUHN:
 card_nber=input("Enter a 16-digit card number: ")
 Card1=LUHN(card_nber)
 Card1.validation()
+Remove Punctuations from UserInput String (without using remove function)
+
 
 punc='''!@$%^&*()_+{}:"<>?|\;-~`<>/'''
 string=input("enter anything here:")
@@ -28,7 +30,7 @@ for i in string:
         empty_str+=i
 print(empty_str)
 
-
+Sort text (word) in Alphabetical Order (without using sort function)
 a="Harry Potter and the Gobllet of Fire"
 w=a.split()
 print(w)
